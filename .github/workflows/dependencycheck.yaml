@@ -21,7 +21,7 @@ jobs:
         with:
           java-version: '17'
       - name: Build project with Maven
-        run: mvn clean install
+        run: mvn clean install -DskipTests=true 
       - name: Depcheck
         uses: dependency-check/Dependency-Check_Action@main
         id: Depcheck
