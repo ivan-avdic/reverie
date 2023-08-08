@@ -13,6 +13,6 @@ public class MvcTestController {
     @GetMapping("/hello")
     public String hello(Model m) {
         m.addAttribute("theDate", new java.util.Date());
-        return "helloworld";
+        return "hello world";
     }
 }
